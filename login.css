@@ -1,0 +1,134 @@
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 1000px;
+}
+
+main{
+  height:1000px;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  
+}
+
+.header {
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin-top: auto;
+}
+
+.middle-header {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+}
+
+.right-header{
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+
+.sign-in-button,.log-in-button {
+  background-color: rgb(255, 255, 255);
+  font-size: 17px;
+  color: rgba(91,65,130,255);
+  height: 45px;
+  width: 80px;
+  margin-right: 15px;
+  border-radius: 55px;
+  border:none;
+  outline: none;
+  box-shadow: inset 0.1px 0.1px 5px rgb(125, 125, 125);
+
+}
+.sign-in-button:hover,.log-in-button:hover{
+  opacity: 0.9;
+  transition: 0.1s;
+  color: rgb(0, 0, 0);
+}
+
+.sign-in-button:active,.log-in-button:active{
+  background-color: white;
+  transition: 0.15s;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin: 0;
+  margin-top: 200px;
+  
+}
+
+.world-map{
+  height: 200px;
+  margin-left: 100px;
+}
+.right-section {
+  width: 50%;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.motto{
+  font-size: 70px;
+  color: white;
+  text-align: center;
+}
+
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  
+}
+
+
+.facebook-logo,.instagram-logo,.x-logo  {
+  height: 50px;
+  margin: 10px;
+}
+
+.right-footer,.left-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-top,.info-bottom{
+  font-size: 17px;
+  color: white;
+
+  
+}
+
+
+
